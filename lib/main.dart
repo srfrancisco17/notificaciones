@@ -11,7 +11,23 @@ void main() async{
   runApp(MyApp());
 
 } 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    PushNotificationService.messageStream.listen((message) {
+      
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
