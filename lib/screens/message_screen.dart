@@ -15,7 +15,7 @@ class MessageScreen extends StatelessWidget {
         title: Text('Message'),
       ),
       body: Center(
-        child: Text('$args'),
+        child: Text('$args', style: TextStyle(fontSize: 50)),
      ),
    );
   }
